@@ -1,0 +1,274 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXA ENERGY SDN. BHD.</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 15px 30px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .hero {
+      margin-top: 70px;
+      position: relative;
+      height: 400px;
+      overflow: hidden;
+    }
+    .hero img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: none;
+    }
+    .hero img.active {
+      display: block;
+    }
+    section {
+      padding: 60px 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #003366;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .download-btn {
+      display: inline-block;
+      background: #003366;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background: #0055aa;
+    }
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    form input, form textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      width: 100%;
+    }
+    form button {
+      background: #003366;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #0055aa;
+    }
+    footer {
+      background: #003366;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    @media(max-width:768px){
+      header {
+        flex-direction: column;
+      }
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EXA ENERGY SDN. BHD.</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#licenses">Licenses</a>
+      <a href="#services">Services</a>
+      <a href="#partners">Partners</a>
+      <a href="#policies">Policies</a>
+      <a href="#projects">Projects</a>
+      <a href="#completed">Completed</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <div class="hero">
+    <img src="https://source.unsplash.com/1600x400/?construction" class="active" alt="Construction" />
+    <img src="https://source.unsplash.com/1600x400/?oil,gas" alt="Oil and Gas" />
+    <img src="https://source.unsplash.com/1600x400/?engineering" alt="Engineering" />
+  </div>
+
+  <!-- About Us -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      EXA ENERGY SDN. BHD. is a Malaysian construction and maintenance company serving Government, Private, and Oil & Gas sectors. Established in 2024, we provide solutions in civil works, building maintenance, and industrial cleaning services. With experienced leadership and strong professional partnerships, we are committed to delivering projects with quality, safety, and integrity.
+    </p>
+    <div style="text-align:center;">
+      <a href="EXA-COMPANY-PROFILE.pdf" class="download-btn" target="_blank">📄 Download Company Profile (PDF)</a>
+    </div>
+  </section>
+
+  <!-- Licenses -->
+  <section id="licenses">
+    <h2>Licenses & Registrations</h2>
+    <div class="cards">
+      <div class="card"><h3>Petronas License</h3><p>202401007915</p></div>
+      <div class="card"><h3>CIDB License</h3><p>Class G3 – 0120240510 – SL137065</p></div>
+      <div class="card"><h3>MOF License</h3><p>K98359535754163337</p></div>
+      <div class="card"><h3>Company Registration</h3><p>1553765-K | Registered 28 Feb 2024</p></div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card"><h3>Civil & Structural Construction</h3><p>Earthworks, reinforced concrete, steel structure fabrication and installation, waterproofing, and repairs.</p></div>
+      <div class="card"><h3>Building Maintenance</h3><p>Painting, corrosion protection, waterproofing, chemical & ultrasonic cleaning for buildings and facilities.</p></div>
+      <div class="card"><h3>Industrial Cleaning</h3><p>High-pressure water jetting, tank & vessel cleaning, cold cutting, and air-fin cooler cleaning.</p></div>
+      <div class="card"><h3>Manpower Supply</h3><p>Skilled supervisors, foremen, welders, fitters, hydrometers, semi-skilled, and general workers.</p></div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section id="partners">
+    <h2>Professional Partners</h2>
+    <div class="cards">
+      <div class="card"><h3>Daya Synergy Sdn. Bhd.</h3><p>Transportation and Waste Maintenance Services</p></div>
+      <div class="card"><h3>DOKA Formworks (M) Sdn. Bhd.</h3><p>System Formworks</p></div>
+      <div class="card"><h3>Akiff Energy Resources Sdn. Bhd.</h3><p>Manpower Recruiting</p></div>
+      <div class="card"><h3>STO SEA Sdn. Bhd.</h3><p>Concrete Expert</p></div>
+    </div>
+  </section>
+
+  <!-- Policies -->
+  <section id="policies">
+    <h2>Our Policies</h2>
+    <div class="cards">
+      <div class="card"><h3>Company Policy</h3><p>Providing honest and sincere services. Customer satisfaction is our top priority with focus on Quality, Time, and Price.</p></div>
+      <div class="card"><h3>Environment, Health & Safety</h3><p>We integrate EHS into all operations, ensuring safe, healthy, and environmentally conscious services for employees, partners, and clients.</p></div>
+      <div class="card"><h3>Quality Policy</h3><p>Committed to delivering services that meet or exceed expectations through continuous improvement and compliance with all regulations.</p></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Project References</h2>
+    <div class="cards">
+      <div class="card"><h3>Petronas Research Sdn. Bhd.</h3><p>On-Site Detention Pond. Value: RM 380,656.63</p></div>
+      <div class="card"><h3>Rumah Idaman KWASA, Damansara</h3><p>HDPE Lining. Value: RM 131,000.00</p></div>
+      <div class="card"><h3>Jabatan Kerja Raya Negeri Sembilan</h3><p>Drainage Installation Services. Value: RM 115,823.00</p></div>
+      <div class="card"><h3>NCER Malaysia</h3><p>Precast Pipe Culvert & Headwall Construction. Value: RM 350,001.65</p></div>
+    </div>
+  </section>
+
+  <!-- Completed Projects -->
+  <section id="completed">
+    <h2>Completed Projects</h2>
+    <div class="cards">
+      <div class="card"><h3>Petronas Chemicals Fertilizer Kedah (2024)</h3><p>Guard Pond Rectification Work. Value: RM 143,000.00</p></div>
+      <div class="card"><h3>Malaysian Refinery Company Melaka (2024)</h3><p>Vessel Cleaning Works (ROME). Value: RM 182,000.00</p></div>
+      <div class="card"><h3>Malaysian Refining Company (2025)</h3><p>Wall & Floor Finishes. Value: RM 629,925.00</p></div>
+      <div class="card"><h3>Petronas RGT Pengerang (2025)</h3><p>Anode Installation Works. Value: RM 113,800.00</p></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Head Office:</strong> No. 1170, Jalan Bidara Jaya, Taman Bidara Jaya, 78300 Masjid Tanah, Melaka.</p>
+    <p><strong>Branch:</strong> No. 61A, Jalan Lawan Pedang 13/27, Taman Tadisma, Sek 13, 40000 Shah Alam, Selangor.</p>
+    <p><strong>Email:</strong> exaenergysdnbhd@gmail.com</p>
+    <p><strong>Phone:</strong> +6010-717 1101 (Helmi Bahrain), +6016-228 0504 (Kamal Asmuje)</p>
+
+    <form action="mailto:exaenergysdnbhd@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 EXA ENERGY SDN. BHD. | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Simple slider
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".hero img");
+    function showSlides() {
+      slides.forEach((img, i) => {
+        img.classList.remove("active");
+        if (i === slideIndex) img.classList.add("active");
+      });
+      slideIndex = (slideIndex + 1) % slides.length;
+    }
+    setInterval(showSlides, 4000);
+  </script>
+</body>
+</html>
+```
